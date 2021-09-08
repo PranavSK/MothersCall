@@ -18,6 +18,7 @@ A narrative sidescroller set in the Antarctica. This is a game being developed a
 
  - Keep the most specific descriptor to the last: VampireDark and not DarkVampire, TreeSmall and not SmallTree.
  - For textures use the following suffixes:
+
     Suffix | Texture
     :------|:-----------------
     `_D`   | Albedo
@@ -30,6 +31,7 @@ A narrative sidescroller set in the Antarctica. This is a game being developed a
     `_E`   | Emission
     `_AO`  | Ambient Occlusion
     `_Mask`| Mask
+    
     It is good practice to use a single texture to combine black and white masks in a single texture split by each RGB channel. For such texture combine the suffixes in the order of RGB.
 
 ### Directory Structure
