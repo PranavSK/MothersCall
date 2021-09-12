@@ -64,3 +64,4 @@ Assets
 
 The following assets were used as-is or with modifications in compliance to the licenses attached to them.
  - ["Female Base Mesh"](https://skfb.ly/onVon) by kosmosovich is licensed under [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
+ - ["Stylized Low Poly Sci-Fi Buildings"](https://skfb.ly/6ztoo) by Robin Butler is licensed under [Creative Commons Attribution-NonCommercial](http://creativecommons.org/licenses/by-nc/4.0/).
