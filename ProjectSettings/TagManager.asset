@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - Player
-  - Floor
-  - 
+  - Ground
+  - Props
   - 
   - 
   - 
@@ -40,4 +40,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3144949355
+    locked: 0
+  - name: Ground
+    uniqueID: 875843547
+    locked: 0
+  - name: Props
+    uniqueID: 873611187
+    locked: 0
+  - name: XFade
+    uniqueID: 1041688197
+    locked: 0
+  - name: Player
+    uniqueID: 589265587
+    locked: 0
+  - name: HUD
+    uniqueID: 3844495785
+    locked: 0
+  - name: Menu
+    uniqueID: 957779647
     locked: 0
