@@ -19,17 +19,28 @@ public class C_InkManager : MonoBehaviour
 
     [SerializeField]
     private TMP_Text _textField;
+    public GameObject textF;
+    public GameObject bckgText;
     public GameObject _nextButton;
-
-    public GameObject holderText;
 
     private bool canStoryStart = true;
     // Start is called before the first frame update
     void Start()
     {
-            holderText.SetActive(true);
+        bckgText.SetActive(false);
+        _textField.enabled = false;
+        _nextButton.SetActive(false);
+        textF.SetActive(false);
+
+        if (canStoryStart)
+        {
+            bckgText.SetActive(true);
+            _textField.enabled = true;
+            textF.SetActive(true);
             _nextButton.SetActive(true);
             StartStory();
+        }
+
     }
 
     // Update is called once per frame
@@ -52,7 +63,9 @@ public class C_InkManager : MonoBehaviour
             string text = _story.Continue(); //gets next line
             text = text?.Trim(); // removes white space from text
             _textField.text = text; // displays new text
+            Debug.Log("Hello Im displaying");
             _nextButton.SetActive(true);
+
         }
         else if (_story.currentChoices.Count > 0)
         {
@@ -61,8 +74,10 @@ public class C_InkManager : MonoBehaviour
         }
         else if (!_story.canContinue)
         {
-            holderText.SetActive(false);
+            bckgText.SetActive(false);
+            _textField.enabled = false;
             _nextButton.SetActive(false);
+            textF.SetActive(false);
             Destroy(this.gameObject);
         }
     }

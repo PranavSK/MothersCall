@@ -35,4 +35,13 @@ public class ChangeLevel : MonoBehaviour
         SceneManager.LoadScene(levelName);
 
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+    public void RestartGame()
+    {
+        LoadNextLevel();
+    }
 }

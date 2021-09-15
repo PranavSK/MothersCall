@@ -8,7 +8,7 @@ ISABELLE: I addressed them, of course.
 ===STARS===
 
 *[Talk about Centaurus.] ->CENTAURUS
-*[Talk about Apus.] -> APUS
+*[Talk about Apus.] -> PAVO
 *[Talk about Lupus.] -> LUPUS
 *[End the call.] ->THEEND
 
@@ -29,7 +29,7 @@ RILEY: Oh, no!
 ISABELLE: It’s alright, sweetheart. Now he’s up in the sky, watching his former students become the heroes they were meant to be.
 ->STARS
 
-=== APUS ===
+=== PAVO ===
 
 ISABELLE: Do you know what peacocks look like?
 
