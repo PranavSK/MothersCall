@@ -669,7 +669,7 @@ MonoBehaviour:
   _choiceButtonContainer: {fileID: 0}
   _choiceButtonPrefab: {fileID: 6655022672458921787, guid: 017c7a278ec557744b9156396ba504d0, type: 3}
   _textField: {fileID: 437816358}
-  _nextButton: {fileID: 1153323518}
+  _nextButton: {fileID: 1153323517}
 --- !u!4 &542691835
 Transform:
   m_ObjectHideFlags: 0

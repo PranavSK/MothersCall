@@ -9,6 +9,8 @@ public class SignpostTrigger : MonoBehaviour
     [SerializeField]
     private GameObject pickupText;
 
+    public GameObject startDialogue;
+
     private bool pickupAllowed;
 
     // Start is called before the first frame update
@@ -43,6 +45,6 @@ public class SignpostTrigger : MonoBehaviour
 
     private void PickUp()
     {
-        //write what happens here
+        startDialogue.SetActive(true);
     }
 }

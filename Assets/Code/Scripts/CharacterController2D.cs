@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Character2D), typeof(Animator), typeof(SpriteRenderer))]
 public class CharacterController2D : MonoBehaviour
 {
-    [SerializeField] private float maxSpeed;
+    [SerializeField] public float maxSpeed;
     // [SerializeField] private float acceleration;
     // [SerializeField] private float friction;
 

@@ -19,31 +19,24 @@ public class C_InkManager : MonoBehaviour
 
     [SerializeField]
     private TMP_Text _textField;
-    public Button _nextButton;
+    public GameObject _nextButton;
+
+    public GameObject holderText;
 
     private bool canStoryStart = true;
     // Start is called before the first frame update
     void Start()
     {
-        _textField.enabled = false;
-        _choiceButtonPrefab.enabled = false;
-        _nextButton.enabled = false;
-        Debug.Log("I started being " + _textField.enabled);
-
-        if (canStoryStart == true)
-        {
-            _textField.enabled = true;
-            _choiceButtonPrefab.enabled = true;
-            _nextButton.enabled = true;
-            Debug.Log("And now I am " + _textField.enabled);
+            holderText.SetActive(true);
+            _nextButton.SetActive(true);
             StartStory();
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-         
+
+        
     }
 
     private void StartStory()
@@ -59,16 +52,17 @@ public class C_InkManager : MonoBehaviour
             string text = _story.Continue(); //gets next line
             text = text?.Trim(); // removes white space from text
             _textField.text = text; // displays new text
+            _nextButton.SetActive(true);
         }
         else if (_story.currentChoices.Count > 0)
         {
             DisplayChoices();
+            _nextButton.SetActive(false);
         }
         else if (!_story.canContinue)
         {
-            _textField.enabled = false;
-            _choiceButtonPrefab.enabled = false;
-            _nextButton.enabled = false;
+            holderText.SetActive(false);
+            _nextButton.SetActive(false);
             Destroy(this.gameObject);
         }
     }
@@ -95,7 +89,7 @@ public class C_InkManager : MonoBehaviour
         choiceButton.transform.SetParent(_choiceButtonContainer.transform, false);
 
         // sets text on the button
-        var buttonText = choiceButton.GetComponentInChildren<Text>();
+        var buttonText = choiceButton.GetComponentInChildren<TMP_Text>();
         buttonText.text = text;
 
         return choiceButton;
